@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Quicksand|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css"  media="screen,projection">
+	<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="css/Resp.css">
+	<link rel="icon" type="image/png" href="img/NI.png" />
+</head>
+<body>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<section>
+		
+		<div id="presentation">
+			<div class="pp"><img src="img/NI.png"></div>
+			<div class="nom"><p>NIKOLA SPACI</p></div>
+			<div id="description">
+				<P>Bienvenue sur mon Eportfolio je suis un étudiant de deuxième années informatique</p>
+				</div>
+				<div class="scroller"><a href="#" onclick="cache()"><i class="material-icons" >keyboard_arrow_down</i></a>
+				</div>
+			</div>
+			<div id=menu>
+				<header>
+					<div class="navbar-fixed">
+						<nav>
+							<div class="nav-wrapper">
+								<a href="#!" class="brand-logo center lgo"><img src="img/NI.png"></a> 
+								<ul class="left hide-on-med-and-down">
+									<li class="active"><a href="#">Présentation</a></li>
+									<li><a href="#l">Compétences</a></li>
+									<li><a href="#">Réalisations</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</header>
+			</div>
+			<div id="page1">
+				<div id="photoprofil"><img src="img/pp.png"></div>
+				<div id="descprofil"><h1>Qui suis je ?</h1><p>Actuellement étudiant en deuxième année de DUT Informatique à l'IUT paris Descartes, je cherche un stage à partir du 9 avril 2018 pour une d'une durée de 10 semaines minimum.
+					Ayant réalisé un grand nombre de projets scolaire et personnels dans divers domaines de l'informatique je maîtrise de nombreux outils et langages informatiques.
+				Afin de rester compétitif et développer ma culture personnelle je suis en veille constante sur les nouvelles technologies (frameworks, sécurité informatique...).</p>
+
+			</div>
+			<div id="qualite"><h1>Je suis...</h1></div>
+		</div>
+	</div>
+
+
+
+</section>
+<script type="text/javascript">
+	function cache(){
+		// on récupère l'élément
+		var elmt = document.getElementById("presentation");
+		elmt.style.opacity="0";
+		elmt.style.display = "none";
+		var menu=document.getElementById("menu");
+		menu.style.display="block";
+		var reste=document.getElementById("page1");
+		reste.style.display="flex";
+		reste.style.opacity="1";
+	}
+</script>
+</body>
+</html>

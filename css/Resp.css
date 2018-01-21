@@ -1,0 +1,32 @@
+#presentation{
+	width: 100%;
+}
+
+.nom{
+	width: 100%;
+}
+.pp{
+	width: 100%;
+}
+#description{
+	width: 100%;
+}
+.lgo img{
+	height: 56px;
+}
+
+#photoprofil img{
+ max-width:100%;
+ max-height:50%;
+}
+ 
+ #page1{
+ 	flex-direction: column;
+ }
+
+#descprofil{
+	width: 80%;
+}
+#photoprofil{
+	width: 35%;
+}
