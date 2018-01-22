@@ -2,6 +2,9 @@
 	background-color: #eee;
  
 }
+p{
+   font-family: 'Quicksand', sans-serif;
+}
 
 #presentation{
   position: fixed;
@@ -135,17 +138,18 @@
 
 
 .descprofil h1{
+   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   text-align: center;
 }
 .divider{
-  width: 70%;
+  width: 80%;
 }
 
 .qualite{
   padding-top:5%;
   display: flex;
-  width: 70%;
+  width: 80%;
   justify-content: space-around;
 }
 .qualite i{
@@ -160,3 +164,34 @@
     justify-content: center;
     align-items: center;
 }
+ 
+
+
+#Competences{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#titlecompetence{
+  width: 80%;
+}
+#titlecompetence h1{
+
+   font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+  
+}
+ .descompet h3{
+  font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+ .descompet {
+  width: 45%;
+  
+ }
+ .descompet i{
+  font-size: 4rem;
+ }

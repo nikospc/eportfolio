@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/materialize.css"  media="screen,projection">
 	<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="css/Resp.css">
 	<link rel="icon" type="image/png" href="img/NI.png" />
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 </head>
 <body>
 	<!--Import jQuery before materialize.js-->
@@ -17,7 +19,7 @@
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<section>
-		
+
 		<div id="presentation">
 			<div class="pp"><img  class="responsive-img" src="img/NI.png"></div>
 			<div class="nom"><p>NIKOLA SPACI</p></div>
@@ -26,7 +28,7 @@
 				</div>
 				<div class="scroller"><a href="#" onclick="cache()"><i class="material-icons" >keyboard_arrow_down</i></a>
 				</div>
-
+				
 			</div>
 			<div id=menu>
 				<header>
@@ -47,22 +49,76 @@
 			</div>
 			<div id="page1">
 				<div class="colprofil">
-				<div class="" id="photoprofil"><img   src="img/pp.png"></div>
-				<div class=" descprofil" ><h1>Qui suis je ?</h1><p>Actuellement étudiant en deuxième année de DUT Informatique à l'IUT paris Descartes, je cherche un stage à partir du 9 avril 2018 pour une d'une durée de 10 semaines minimum.
-					Ayant réalisé un grand nombre de projets scolaire et personnels dans divers domaines de l'informatique je maîtrise de nombreux outils et langages informatiques.
-			</p>
+					<div class="" id="photoprofil"><img   src="img/pp.png"></div>
+					<div class=" descprofil" ><h1>Qui suis je ?</h1><p>Actuellement étudiant en deuxième année de DUT Informatique à l'IUT paris Descartes, je cherche un stage à partir du 9 avril 2018 pour une d'une durée de 10 semaines minimum.
+						Ayant réalisé un grand nombre de projets scolaire et personnels dans divers domaines de l'informatique je maîtrise de nombreux outils et langages informatiques.
+					</p>
+				</div>
 			</div>
-		</div>
 
 			<div class="divider"></div>
-				<div class="qualite">
-					<div class="s"><i class="material-icons">group</i><p>Travail en Groupe</p></div>
-					<div class="s"><i class="material-icons">group</i><p>Autonome</p></div>
-					<div class="s"><i class="material-icons">group</i><p>Rigoureux</p></div>
-
+			<div class="qualite">
+				<div class="s"><i class="material-icons">group</i>
+					<p>Travail en Equipe</p>
+					<p>Les différents projets réalisés durant ma scolarité m'ont permis de développer un sens du travail en équipe important si l'on souhaite proposer la meilleure solution. </p>
 				</div>
+				<div class="s"><i class="material-icons">flash_on
+				</i><p>Rigoureux</p>
+				<p>Afin de posposer un projet de qualité je suis rigoureux dans toutes les tâches que j'effectue ainsi on évite bon nombres de problèmes</p>
+			</div>
+			<div class="s"><i class="material-icons">laptop_mac
+			</i><p>Autonome</p>
+			<p>Pour réaliser mes différents projets j'ai du apprendre à travailler de facon autonome tout en étant capable de m'autoformer</p>
+			</div>
 		</div>
-	</div>
+		<div id="titlecompetence"><h1>Compétences</h1></div>
+		<div id="Competences">
+		<div class="descompet">
+			<div class="skill card hoverable"">
+            	<div class="card-content blue-text">
+             	 <span class="card-title">Software</span>
+             <i class="devicon-html5-plain colored devicon"></i>
+             <i class="devicon-css3-plain colored devicon"></i>
+            	</div>
+         
+          </div>
+		 </div> <!-- fin descompet-->
+
+		 	<div class="descompet">
+			<div class="skill card hoverable">
+            	<div class="card-content blue-text">
+             	 <span class="card-title">WEB</span>
+             	 <i class="devicon-html5-plain colored devicon"></i>
+             	 <i class="devicon-css3-plain colored devicon"></i>
+            	</div>
+          
+          </div>
+		 </div> <!-- fin descompet-->
+
+		 	<div class="descompet">
+			<div class="skill card hoverable">
+            	<div class="card-content blue-text">
+             	 <span class="card-title">DESKTOP</span>
+             	 <i class="devicon-html5-plain colored devicon"></i>
+             	 <i class="devicon-css3-plain colored devicon"></i>
+            	</div>
+            
+          </div>
+		 </div> <!-- fin descompet-->
+
+		 	<div class="descompet">
+			<div class="skill card hoverable">
+            	<div class="card-content blue-text">
+             	 <span class="card-title">Base de données</span>
+             	 <i class="devicon-html5-plain colored devicon"></i>
+             	 <i class="devicon-css3-plain colored devicon"></i>
+            	</div>
+            
+          </div>
+		 </div> <!-- fin descompet-->
+		</div>
+</div>
+</div>
 </div>
 
 
@@ -71,33 +127,33 @@
 <script >
 	$(document).ready(function(){
 		console.log( "ready!" );
-		var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
-		$('#presentation').bind(mousewheelevt, function(e){
-			console.log( "execution" );
-    var evt = window.event || e //equalize event object     
-    evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
-    var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
-
-    if(delta > 0) {
-    	cache();
-    }
-    else{
-    	cache();    }   
-    });
-	});
-</script>
-<script type="text/javascript">
-	function cache(){
-		// on récupère l'élément
-		var elmt = document.getElementById("presentation");
-		elmt.style.opacity="0";
-		elmt.style.display = "none";
-		var menu=document.getElementById("menu");
-		menu.style.display="block";
-		var reste=document.getElementById("page1");
-		reste.style.display="flex";
-		reste.style.opacity="1";
-	}
-</script>
-</body>
-</html>
+							var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
+							$('#presentation').bind(mousewheelevt, function(e){
+								console.log( "execution" );
+							var evt = window.event || e //equalize event object     
+							evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
+							var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
+							
+							if(delta > 0) {
+								cache();
+							}
+							else{
+								cache();    }   
+							});
+						});
+					</script>
+					<script type="text/javascript">
+						function cache(){
+							// on récupère l'élément
+							var elmt = document.getElementById("presentation");
+							elmt.style.opacity="0";
+							elmt.style.display = "none";
+							var menu=document.getElementById("menu");
+							menu.style.display="block";
+							var reste=document.getElementById("page1");
+							reste.style.display="flex";
+							reste.style.opacity="1";
+						}
+					</script>
+				</body>
+				</html>							
