@@ -60,7 +60,10 @@
 #Competences{
 
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   align-items: center;
  
+}
+.descompet{
+  width: 100%;
 }

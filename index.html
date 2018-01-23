@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 	<link href="https://fonts.googleapis.com/css?family=Lato|Quicksand|Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/materialize.css"  media="screen,projection">
 	<link rel="stylesheet" media="(max-width: 800px)" type="text/css" href="css/Resp.css">
 	<link rel="icon" type="image/png" href="img/NI.png" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 </head>
@@ -18,154 +19,163 @@
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script src="js/scripts.js"></script>
-	<section>
+	
 
-		<div id="presentation">
-			<div class="pp"><img  class="responsive-img" src="img/NI.png"></div>
-			<div class="nom"><p>NIKOLA SPACI</p></div>
-			<div id="description">
-				<P>Bienvenue sur mon Eportfolio je suis un étudiant de deuxième années informatique</p>
-				</div>
-				<div class="scroller"><a href="#" onclick="cache()"><i class="material-icons" >keyboard_arrow_down</i></a>
-				</div>
-				
+	<div id="presentation">
+		<div class="pp"><img  class="responsive-img" src="img/NI.png"></div>
+		<div class="nom"><p>NIKOLA SPACI</p></div>
+		<div id="description">
+			<P>Bienvenue sur mon Eportfolio je suis un étudiant de deuxième années informatique</p>
 			</div>
-			<div id=menu>
-				<header>
-					<div class="navbar-fixed">
-						<nav>
-							<div class="nav-wrapper">
-								<a href="#!" class="brand-logo center lgo"><img src="img/NI.png"></a> 
-								<ul class="left hide-on-med-and-down">
-									<li class="active"><a href="#">Présentation</a></li>
-									<li><a href="#l">Compétences</a></li>
-									<li><a href="#">Réalisations</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
-						</nav>
-					</div>
-				</header>
+			<div class="scroller"><a href="#" onclick="cache()"><i class="material-icons" >keyboard_arrow_down</i></a>
 			</div>
-			<div id="page1">
-				<div class="colprofil">
+
+		</div>
+
+		<div id=menu>
+			<header>
+				<div class="navbar-fixed">
+					<nav>
+						<div class="nav-wrapper">
+							<a href="#" class="brand-logo center lgo"><img src="img/NI.png"></a> 
+							<ul class="section table-of-contents left hide-on-med-and-down">
+								<li ><a class="ancre" href="#colprofil">Présentation</a></li>
+								<li><a class="ancre" href="#titlecompetence">Compétences</a></li> 
+								<li><a class="ancre" href="#titlerealisation">Réalisations</a></li>
+								<li><a class="ancre" href="#">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+		</div>
+		<div id="page">
+			<section>
+				<div id="colprofil" class="section scrollspy">
 					<div class="" id="photoprofil"><img   src="img/pp.png"></div>
 					<div class=" descprofil" ><h1>Qui suis je ?</h1><p>Actuellement étudiant en deuxième année de DUT Informatique à l'IUT paris Descartes, je cherche un stage à partir du 9 avril 2018 pour une d'une durée de 10 semaines minimum.
 						Ayant réalisé un grand nombre de projets scolaire et personnels dans divers domaines de l'informatique je maîtrise de nombreux outils et langages informatiques.
 					</p>
 				</div>
 			</div>
+		</section>
 
-			<div class="divider"></div>
-			<div class="qualite">
-				<div class="s"><i class="material-icons">group</i>
-					<p>Travail en Equipe</p>
-					<p>Les différents projets réalisés durant ma scolarité m'ont permis de développer un sens du travail en équipe important si l'on souhaite proposer la meilleure solution. </p>
-				</div>
-				<div class="s"><i class="material-icons">flash_on
-				</i><p>Rigoureux</p>
-				<p>Afin de posposer un projet de qualité je suis rigoureux dans toutes les tâches que j'effectue ainsi on évite bon nombres de problèmes</p>
+		<div class="divider"></div>
+		<div class="qualite">
+			<div class="s"><i class="material-icons">group</i>
+				<p>Travail en Equipe</p>
+				<p>Les différents projets réalisés durant ma scolarité m'ont permis de développer un sens du travail en équipe, important si l'on souhaite proposer la meilleure solution. </p>
 			</div>
-			<div class="s"><i class="material-icons">laptop_mac
-			</i><p>Autonome</p>
-			<p>Pour réaliser mes différents projets j'ai du apprendre à travailler de facon autonome tout en étant capable de m'autoformer</p>
-			</div>
+			<div class="s"><i class="material-icons">flash_on
+			</i><p>Rigoureux</p>
+			<p>Afin de posposer un projet de qualité je suis rigoureux dans toutes les tâches que j'effectue ainsi on évite bon nombres de problèmes.</p>
 		</div>
-		<div id="titlecompetence"><h1>Compétences</h1></div>
-		<div id="Competences">
-		<div class="descompet">
-			<div class="skill card hoverable"">
-            	<div class="card-content blue-text">
-             	 <span class="card-title">Software</span>
-             <i class="devicon-photoshop-plain colored devicon"></i>
-<i class="devicon-github-plain colored devicon"></i>
-<i class="devicon-git-plain colored devicon"></i>
+		<div class="s"><i class="material-icons">laptop_mac
+		</i><p>Autonome</p>
+		<p>Pour réaliser mes différents projets j'ai du apprendre à travailler de facon autonome tout en étant capable de m'autoformer.</p>
+	</div>
+</div>
+
+<div id="titlecompetence" class="section scrollspy"><h1>Compétences</h1></div>
+<div id="Competences">
+	<div class="descompet">
+		<div class="skill card hoverable"">
+			<div class="card-content blue-text">
+				<span class="card-title">Software</span>
+				<i class="devicon-photoshop-plain colored devicon"></i>
+				<i class="devicon-github-plain colored devicon"></i>
+				<i class="devicon-git-plain colored devicon"></i>
 
 
-            	</div>
-         
-          </div>
-		 </div> <!-- fin descompet-->
+			</div>
 
-		 	<div class="descompet">
-			<div class="skill card hoverable">
-            	<div class="card-content blue-text">
-             	 <span class="card-title">WEB</span>
-             	 <i class="devicon-html5-plain colored devicon"></i>
-             	 <i class="devicon-css3-plain colored devicon"></i>
-             	 <i class="devicon-javascript-plain colored devicon"></i>
+		</div>
+	</div> <!-- fin descompet-->
 
-            	</div>
-          
-          </div>
-		 </div> <!-- fin descompet-->
+	<div class="descompet">
+		<div class="skill card hoverable">
+			<div class="card-content blue-text">
+				<span class="card-title">Développement WEB</span>
+				<i class="devicon-html5-plain colored devicon"></i>
+				<i class="devicon-css3-plain colored devicon"></i>
+				<i class="devicon-javascript-plain colored devicon"></i>
 
-		 	<div class="descompet">
-			<div class="skill card hoverable">
-            	<div class="card-content blue-text">
-             	 <span class="card-title">DESKTOP</span>
-             	 <i class="devicon-android-plain colored devicon"></i>
+			</div>
 
-				 <i class="devicon-java-plain colored devicon"></i>
-				 <i class="devicon-c-plain colored devicon"></i>
-				 <i class="devicon-cplusplus-plain colored devicon"></i>
-				 <i class="devicon-csharp-plain colored devicon"></i>
+		</div>
+	</div> <!-- fin descompet-->
+
+	<div class="descompet">
+		<div class="skill card hoverable">
+			<div class="card-content">
+				<span class="card-title">Développement Logiciel</span>
+				<i class="devicon-android-plain colored devicon"></i>
+
+				<i class="devicon-java-plain colored devicon"></i>
+				<i class="devicon-c-plain colored devicon"></i>
+				<i class="devicon-cplusplus-plain colored devicon"></i>
+				<i class="devicon-csharp-plain colored devicon"></i>
 
 
-            	</div>
-            
-          </div>
-		 </div> <!-- fin descompet-->
+			</div>
 
-		 	<div class="descompet">
-			<div class="skill card hoverable">
-            	<div class="card-content blue-text">
-             	 <span class="card-title">Base de données</span>
-             	 <i class="devicon-mysql-plain colored devicon"></i>
-					<i class="devicon-oracle-original colored devicon"></i>
+		</div>
+	</div> <!-- fin descompet-->
 
-            	</div>
-            
-          </div>
-		 </div> <!-- fin descompet-->
+	<div class="descompet">
+		<div class="skill card hoverable">
+			<div class="card-content blue-text">
+				<span class="card-title">Base de données</span>
+				<i class="devicon-mysql-plain colored devicon"></i>
+				<i class="devicon-oracle-original colored devicon"></i>
 
-		 	<div class="descompet">
-			<div class="skill card hoverable">
-            	<div class="card-content blue-text">
-             	 <span class="card-title">OS</span>
-             	 <i class="devicon-windows8-original colored devicon"></i>
+			</div>
+
+		</div>
+	</div> <!-- fin descompet-->
+
+	<div class="descompet">
+		<div class="skill card hoverable">
+			<div class="card-content blue-text">
+				<span class="card-title">Système d'exploitation</span>
+				<i class="devicon-windows8-original colored devicon"></i>
 				<i class="devicon-linux-plain colored devicon"></i>
 
 
-            	</div>
-            
-          </div>
-		 </div> <!-- fin descompet-->
-
-		 	<div class="descompet">
-			<div class="skill card hoverable">
-            	<div class="card-content blue-text">
-             	 <span class="card-title">CMS</span>
-             	<i class="devicon-wordpress-plain colored devicon"></i>
-
-				
-
-
-            	</div>
-            
-          </div>
-		 </div> <!-- fin descompet-->
+			</div>
 
 		</div>
+	</div> <!-- fin descompet-->
+
+	<div class="descompet">
+		<div class="skill card hoverable">
+			<div class="card-content blue-text">
+				<span class="card-title">CMS</span>
+				<i class="devicon-wordpress-plain colored devicon"></i>
+
+
+
+
+			</div>
+
+		</div>
+	</div> <!-- fin descompet-->
+
+</div>
+
+<div id="titlerealisation" class="section scrollspy"><h1>Réalisations</h1></div>
+
 </div>
 </div>
 </div>
 
 
 
-</section>
+
+
 <script >
 	$(document).ready(function(){
+		 $('.scrollspy').scrollSpy();
 		console.log( "ready!" );
 							var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
 							$('#presentation').bind(mousewheelevt, function(e){
@@ -178,8 +188,19 @@
 								cache();
 							}
 							else{
-								cache();    }   
-							});
+								cache();  
+
+								console.error("te");
+							}   
+						});
+							$(document).ready(function() {
+		$('.ancre').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
 						});
 					</script>
 					<script type="text/javascript">
@@ -188,12 +209,19 @@
 							var elmt = document.getElementById("presentation");
 							elmt.style.opacity="0";
 							elmt.style.display = "none";
+							//$("#presentation").fadeOut();
 							var menu=document.getElementById("menu");
 							menu.style.display="block";
-							var reste=document.getElementById("page1");
-							reste.style.display="flex";
+							var reste=document.getElementById("page");
 							reste.style.opacity="1";
+							$("#page").fadeIn("speed");
+							
+							reste.style.display="flex";
+
 						}
 					</script>
-				</body>
-				</html>							
+					<script src="js/scrollreveal.js"></script>
+					<script >window.sr = ScrollReveal();
+				sr.reveal('.descompet');</script>
+			</body>
+			</html>							

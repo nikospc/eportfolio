@@ -5,7 +5,9 @@
 p{
    font-family: 'Quicksand', sans-serif;
 }
-
+nav{
+  line-height:0px;
+}
 #presentation{
   position: fixed;
     top: 0;
@@ -88,7 +90,7 @@ p{
   }
 }
 
-#page1{
+#page{
   display: none;
   opacity: 0;
 }
@@ -106,7 +108,7 @@ p{
 
 
 
-#page1{
+#page{
   margin-top: 5%;
   /*margin-left: 5%;*/
   display: none;
@@ -117,7 +119,7 @@ p{
   justify-content: center;
 }
 
-.colprofil{
+#colprofil{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -158,6 +160,7 @@ p{
 }
 
 .s {
+  transition: all 0.1s;
     display: flex;
     flex-direction: column;
     width: 33%;
@@ -201,10 +204,20 @@ p{
   text-align: center;
 }
 
-i:hover{
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.s:hover{
+
+    transform: scale(1.03);  (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) 
 }
 
-#competences:nth-child(5) {
-    justify-content: center;
+.card-content span{
+    color:#123D89 !important;
+}
+
+#titlerealisation h1{
+     font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+
+#titlerealisation{
+  width: 80%;
 }
