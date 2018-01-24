@@ -221,3 +221,25 @@ nav{
 #titlerealisation{
   width: 80%;
 }
+
+#carteprojet{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#carteprojet .card{
+  width: 30%;
+}
+
+.card-image{
+ width:  100%;
+  height:  100%;
+}
+  
+.card-image img{
+  max-width: 100%;
+  height: auto;
+}
+

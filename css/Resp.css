@@ -69,3 +69,13 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+#carteprojet{
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+#carteprojet .card{
+  width: 100%;
+}
