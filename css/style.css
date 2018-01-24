@@ -4,6 +4,7 @@
 }
 p{
    font-family: 'Quicksand', sans-serif;
+   background-color: transparent;
 }
 nav{
   line-height:0px;
@@ -132,6 +133,9 @@ nav{
   width: 45%;
 }
 
+.divider{
+  margin-top: 5px;
+}
 #photoprofil img{
  max-width:60%;
  height: auto;
@@ -226,6 +230,7 @@ nav{
   width: 80%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -233,13 +238,15 @@ nav{
   width: 30%;
 }
 
-.card-image{
- width:  100%;
-  height:  100%;
+#carteprojet .card .card-content {
+    padding: 5px 0 0 0;
+    background-color: white;
 }
-  
-.card-image img{
-  max-width: 100%;
-  height: auto;
+
+#carteprojet .card i{
+  float: right;
+  font-size: 2rem;
+  background-color: white;
+  color: #123D89 ;
 }
 
