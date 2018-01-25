@@ -7563,7 +7563,7 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav .collapsible-body {
   padding: 0;
 }
-/*
+
 #sidenav-overlay {
   position: fixed;
   top: 0;
@@ -7571,10 +7571,10 @@ input[type=range]:focus::-ms-fill-upper {
   right: 0;
   height: 120vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 997;
+  z-index: 500;
   will-change: opacity;
 }
-*/
+
 /*
     @license
     Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
